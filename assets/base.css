@@ -1,0 +1,63 @@
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.control-row-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#state-select-outer, #select-metric-outer {
+  width: 45%;
+}
+
+#region-select-all, #state-select-outer > label, #select-metric-outer > label {
+  margin-bottom: 3px;
+  color: #06031f;
+  font-weight: bold;
+}
+
+#select-metric-outer, #region-select-outer {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 750px) {
+  .control-row-1 {
+    flex-direction: column;
+  }
+
+  #state-select-outer, #select-metric-outer {
+    width: 100%;
+  }
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  #upper-left, #geo-map-outer {
+    padding: 1rem 4rem;
+  }
+
+  #state-select-outer, #select-metric-outer {
+    width: 45%;
+  }
+
+}
+
+body {
+  font-size: 30px;
+  /* background-color: #DEB887; */
+  /* background-color: #E9967A; */
+  background-color: #FFFACD;
+}
